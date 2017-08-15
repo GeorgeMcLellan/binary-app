@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.development.georgemcl.binaryapp.PracticeFragment">
+
+
+    <TextView
+        android:id="@+id/answerTxt"
+        android:layout_width="340dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="23dp"
+        android:textAlignment="center"
+        android:textColor="@color/buttonBackgroud"
+        android:textSize="26sp" />
+
+    <EditText
+        android:id="@+id/toConvertTf"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:imeOptions="actionGo"
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_below="@+id/answerTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:id="@+id/convertBtn"
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/convertBtnTxt"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:theme="@style/AppTheme.Button"
+        android:layout_marginTop="14dp"
+        android:layout_below="@+id/toConvertTf"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/copyFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/buttonBackgroud"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/copy"
+        android:layout_alignBottom="@+id/convertBtn"
+        android:layout_alignLeft="@+id/clearFab"
+        android:layout_alignStart="@+id/clearFab" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/clearFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toConvertTf"
+        android:layout_marginLeft="19dp"
+        android:layout_marginStart="19dp"
+        android:layout_toEndOf="@+id/toConvertTf"
+        android:layout_toRightOf="@+id/toConvertTf"
+        android:clickable="true"
+        app:backgroundTint="@color/buttonBackgroud"
+        app:fabSize="mini"
+        app:srcCompat="@drawable/clear" />
+
+</RelativeLayout>

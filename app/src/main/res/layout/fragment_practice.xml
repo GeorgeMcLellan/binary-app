@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.development.georgemcl.binaryapp.ConvertFragment">
+
+
+    <Button
+        android:id="@+id/checkBtn"
+        style="@style/AppTheme.Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="@string/checkBtnTxt"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:theme="@style/AppTheme.Button"
+        android:layout_below="@+id/answerTxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/numberTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="175dp"
+        tools:layout_editor_absoluteY="58dp" />
+
+    <EditText
+        android:id="@+id/answerTxt"
+        android:layout_width="255dp"
+        android:layout_height="48dp"
+        android:ems="10"
+        android:imeOptions="actionGo"
+
+        android:inputType="number"
+        android:textAlignment="center"
+        android:layout_below="@+id/isCorrectTxt"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/isCorrectTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/numberTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:textAlignment="center"
+        android:textSize="22sp" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/newNumFab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:backgroundTint="@color/buttonBackgroud"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_menu_rotate"
+        android:layout_alignTop="@+id/answerTxt"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp" />
+
+</RelativeLayout>
